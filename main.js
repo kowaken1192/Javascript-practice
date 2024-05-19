@@ -1,13 +1,10 @@
 'use strict';
 
-// My name is Taro Yamada, call me Taro!
+// ひとつが文字列になると連結される
+console.log(50 + '20');
 
-const first_name = 'Taro';
-const last_name = 'Yamada';
-
-// 定数や変数は’’を使わないで表示させる
-// console.log('My name is' + first_name + '' + last_name + 'call me' + first_name);
-// console.log('My name is ' + first_name + ' ' + last_name + ', call me ' + first_name);
-
-console.log('My name is ${first_name} ${last_name}, call me ${first_name}');
-console.log(`My name is ${first_name} ${last_name}, call me ${first_name}`);
+// promptメソッドを使うとユーザーからのの入力を受けとる
+// 加えて必ず文字列を返す仕様になる
+// 変更するには必ずNumberを使う
+const n = prompt('Any number?');
+console.log(Number(n) + 10);
