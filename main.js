@@ -1,6 +1,11 @@
 'use strict';
 
-for (let i = 0; i < 3; i++) {
-    // console.log('Hello');
-    console.log(`&{i}: Hello`);
+const rate = 1.1;
+
+for (let price = 150; price <= 160; price++) {
+    console.log(`Price: ${price}`)
+    for (let amount = 120; amount <= 140; amount+=10) {
+        console.log(`Amount: ${amount}`)
+        console.log(price * amount * rate);
+    }  
 }
