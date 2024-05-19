@@ -1,9 +1,6 @@
 'use strict';
 
-const score = Number(prompt('Score?'));
-
-if (score >= 90) {
-    console.log('合格です');
-} else {
-    console.log('アホだな残念！');
+for (let i = 0; i < 3; i++) {
+    // console.log('Hello');
+    console.log(`&{i}: Hello`);
 }
